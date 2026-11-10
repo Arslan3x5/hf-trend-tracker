@@ -25,7 +25,10 @@ def main():
     if not token:
         sys.exit("Set HF_TOKEN to a Hugging Face write token first.")
     api = HfApi(token=token)
-    api.create_repo(SPACE_ID, repo_type="space", space_sdk="gradio", exist_ok=True)
+    try:
+        api.create_repo(SPACE_ID, repo_type="space", space_sdk="gradio", exist_ok=True)
+    except Exception as exc:
+        print("note: create_repo skipped, assuming the Space already exists:", type(exc).__name__)
     operations = [
         CommitOperationAdd(path_in_repo=remote, path_or_fileobj=local)
         for local, remote in FILES.items()

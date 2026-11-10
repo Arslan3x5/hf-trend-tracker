@@ -6,7 +6,7 @@ colorTo: blue
 sdk: gradio
 app_file: app.py
 pinned: false
-short_description: Daily history of Hugging Face trending models, datasets, Spaces
+short_description: Daily history of Hugging Face trending lists
 tags:
   - mcp-server
 ---

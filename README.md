@@ -7,6 +7,10 @@ is big.
 - **Live dashboard:** https://huggingface.co/spaces/arslan3x5/hf-trend-tracker
 - **Dataset (updated daily):** https://huggingface.co/datasets/arslan3x5/hf-trend-history
 
+## Screenshot
+
+![Dashboard showing the fastest-rising items on Hugging Face](docs/dashboard.png)
+
 ## What it does
 
 - Takes a snapshot of the top 300 trending **models, datasets and Spaces** every day

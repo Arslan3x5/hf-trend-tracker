@@ -7,6 +7,14 @@ from huggingface_hub import HfApi, hf_hub_download
 
 import trends
 
+import spaces
+
+
+@spaces.GPU
+def _gpu_stub():
+    """No-op. ZeroGPU Spaces need one @spaces.GPU function at startup."""
+    return True
+
 DATASET_REPO = os.getenv("DATASET_REPO", "arslan3x5/hf-trend-history")
 DAYS_LOADED = 60
 CACHE_SECONDS = 3600

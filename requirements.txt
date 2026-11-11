@@ -1,3 +1,4 @@
 gradio[mcp]
 pandas
 huggingface_hub
+spaces
